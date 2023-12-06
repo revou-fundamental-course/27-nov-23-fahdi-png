@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+/* Title */
+.title {
+    margin-top: 20px;
+    text-align: center;
+    color: #007bff;
+}
+
+/* Subtitle */
+.subtitle {
+    margin: 10px 0px;
+    text-align: center;
+    color: #6c757d;
+}
+
+/* Menu */
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu > a {
+    text-decoration: none;
+}
+
+.menu-triangle,
+.menu-parallelogram {
+    text-decoration: none;
+    background-color: #28a745;
+    color: white;
+    margin: 10px 0;
+    padding: 10px 20px;
+    width: 80%;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.menu-triangle:hover,
+.menu-parallelogram:hover {
+    background-color: #218838;
+}
+
+/* Main Content */
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.card {
+    margin-top: 10px;
+    border: 1px solid #28a745;
+    padding: 20px;
+    box-shadow: 0px 14px 5px -7px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+}
+
+.luas-segitiga,
+.keliling-segitiga,
+.luas-jajargenjang,
+.keliling-jajargenjang {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px 20px;
+    width: 100%;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.img {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.img img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rumus,
+.form-hitung-luas {
+    text-align: center;
+    font-size: large;
+    color: #343a40;
+}
+
+.form-place {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-place > input {
+    padding: 10px;
+    border-radius: 6px;
+    width: 80%;
+    border: 1px solid #ccc;
+}
+
+.button-hasil,
+.button-reset {
+    position: relative;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button-hasil {
+    background-color: #28a745;
+}
+
+.button-reset {
+    background-color: #dc3545;
+}
+
+/* Hover effect for buttons */
+.button-hasil:hover,
+.button-reset:hover {
+    opacity: 0.9;
+    transform: translateY(2px);
+}
